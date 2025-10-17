@@ -1,6 +1,7 @@
 import React from "react";
 import Dashboard from "./StatusCards";
 import Greeting from "./Greeting";
+import Counter from "./Counter";
 
 function App() {
   const details = {
@@ -12,7 +13,8 @@ function App() {
   return (
     <div>
       {/* <Dashboard /> */}
-      <Greeting details={details}/>
+      {/* <Greeting details={details}/> */}
+      <Counter/>
     </div>
   );
 }
