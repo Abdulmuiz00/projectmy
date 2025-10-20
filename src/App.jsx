@@ -4,6 +4,7 @@ import Greeting from "./Greeting";
 import Counter from "./Counter";
 import ProfileCard from "./ProfileCard";
 import ThemeToggle from "./ThemeToggle";
+import MirrorLocal from "./TypeMirror";
 
 function App() {
   const details = {
@@ -18,7 +19,8 @@ function App() {
       {/* <Greeting details={details}/> */}
       {/* <Counter/> */}
       {/* <ProfileCard/> */}
-      <ThemeToggle/>
+      {/* <ThemeToggle/> */}
+      <MirrorLocal/>
     </div>
   );
 };
