@@ -5,6 +5,7 @@ import Counter from "./Counter";
 import ProfileCard from "./ProfileCard";
 import ThemeToggle from "./ThemeToggle";
 import MirrorLocal from "./TypeMirror";
+import ToDoLite from "./Todo";
 
 function App() {
   const details = {
@@ -20,7 +21,8 @@ function App() {
       {/* <Counter/> */}
       {/* <ProfileCard/> */}
       {/* <ThemeToggle/> */}
-      <MirrorLocal/>
+      {/* <MirrorLocal/> */}
+      <ToDoLite/>
     </div>
   );
 };
