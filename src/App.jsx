@@ -6,6 +6,7 @@ import ProfileCard from "./ProfileCard";
 import ThemeToggle from "./ThemeToggle";
 import MirrorLocal from "./TypeMirror";
 import ToDoLite from "./Todo";
+import RandomQuote from "./Quote";
 
 function App() {
   const details = {
@@ -22,7 +23,8 @@ function App() {
       {/* <ProfileCard/> */}
       {/* <ThemeToggle/> */}
       {/* <MirrorLocal/> */}
-      <ToDoLite/>
+      {/* <ToDoLite/> */}
+      <RandomQuote />
     </div>
   );
 };
