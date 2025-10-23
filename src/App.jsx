@@ -7,6 +7,8 @@ import ThemeToggle from "./ThemeToggle";
 import MirrorLocal from "./TypeMirror";
 import ToDoLite from "./Todo";
 import RandomQuote from "./Quote";
+import PasswordToggle from "./PasswordToggler";
+import PasswordToggler from "./PasswordToggler";
 
 function App() {
   const details = {
@@ -24,7 +26,8 @@ function App() {
       {/* <ThemeToggle/> */}
       {/* <MirrorLocal/> */}
       {/* <ToDoLite/> */}
-      <RandomQuote />
+      {/* <RandomQuote /> */}
+      <PasswordToggler />
     </div>
   );
 };
