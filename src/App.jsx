@@ -9,6 +9,7 @@ import ToDoLite from "./Todo";
 import RandomQuote from "./Quote";
 import PasswordToggle from "./PasswordToggler";
 import PasswordToggler from "./PasswordToggler";
+import TipCalculator from "./TipCalculator";
 
 function App() {
   const details = {
@@ -27,7 +28,8 @@ function App() {
       {/* <MirrorLocal/> */}
       {/* <ToDoLite/> */}
       {/* <RandomQuote /> */}
-      <PasswordToggler />
+      {/* <PasswordToggler /> */}
+      <TipCalculator />
     </div>
   );
 };
