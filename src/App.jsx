@@ -10,6 +10,7 @@ import RandomQuote from "./Quote";
 import PasswordToggle from "./PasswordToggler";
 import PasswordToggler from "./PasswordToggler";
 import TipCalculator from "./TipCalculator";
+import TemperatureConverter from "./TempConverter";
 
 function App() {
   const details = {
@@ -29,7 +30,8 @@ function App() {
       {/* <ToDoLite/> */}
       {/* <RandomQuote /> */}
       {/* <PasswordToggler /> */}
-      <TipCalculator />
+      {/* <TipCalculator /> */}
+      <TemperatureConverter/>
     </div>
   );
 };
