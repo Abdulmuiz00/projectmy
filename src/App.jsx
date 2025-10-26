@@ -11,6 +11,7 @@ import PasswordToggle from "./PasswordToggler";
 import PasswordToggler from "./PasswordToggler";
 import TipCalculator from "./TipCalculator";
 import TemperatureConverter from "./TempConverter";
+import DigitalClock from "./DigitalClock";
 
 function App() {
   const details = {
@@ -31,7 +32,8 @@ function App() {
       {/* <RandomQuote /> */}
       {/* <PasswordToggler /> */}
       {/* <TipCalculator /> */}
-      <TemperatureConverter/>
+      {/* <TemperatureConverter/> */}
+      <DigitalClock />
     </div>
   );
 };
