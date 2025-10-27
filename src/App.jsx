@@ -12,6 +12,7 @@ import PasswordToggler from "./PasswordToggler";
 import TipCalculator from "./TipCalculator";
 import TemperatureConverter from "./TempConverter";
 import DigitalClock from "./DigitalClock";
+import CountdownTimer from "./TimeCountdown";
 
 function App() {
   const details = {
@@ -33,7 +34,8 @@ function App() {
       {/* <PasswordToggler /> */}
       {/* <TipCalculator /> */}
       {/* <TemperatureConverter/> */}
-      <DigitalClock />
+      {/* <DigitalClock /> */}
+      <CountdownTimer />
     </div>
   );
 };
