@@ -13,14 +13,16 @@ import TipCalculator from "./TipCalculator";
 import TemperatureConverter from "./TempConverter";
 import DigitalClock from "./DigitalClock";
 import CountdownTimer from "./TimeCountdown";
+import About from "./About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const details = {
-    name:"Abdulmuiz",
+    name: "Abdulmuiz",
     age: 20,
     school: "LAUTECH",
     department: "Computer Science",
-};
+  };
   return (
     <div>
       {/* <Dashboard /> */}
@@ -35,10 +37,15 @@ function App() {
       {/* <TipCalculator /> */}
       {/* <TemperatureConverter/> */}
       {/* <DigitalClock /> */}
-      <CountdownTimer />
+      {/* <CountdownTimer /> */}
+      <BrowserRouter>
+        <Routes>
+
+          <Route path="/" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-};
+}
 
 export default App;
-
