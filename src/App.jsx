@@ -15,6 +15,7 @@ import DigitalClock from "./DigitalClock";
 import CountdownTimer from "./TimeCountdown";
 import About from "./About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Users from "./API";
 
 function App() {
   const details = {
@@ -38,12 +39,14 @@ function App() {
       {/* <TemperatureConverter/> */}
       {/* <DigitalClock /> */}
       {/* <CountdownTimer /> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
 
           <Route path="/" element={<About />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <h1 className="font-bold">Users</h1>
+      <Users />
     </div>
   );
 }
