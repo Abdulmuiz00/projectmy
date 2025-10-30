@@ -16,6 +16,7 @@ import CountdownTimer from "./TimeCountdown";
 import About from "./About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Users from "./API";
+import Joke from "./RandomApi";
 
 function App() {
   const details = {
@@ -45,8 +46,9 @@ function App() {
           <Route path="/" element={<About />} />
         </Routes>
       </BrowserRouter> */}
-      <h1 className="font-bold">Users</h1>
-      <Users />
+      {/* <h1 className="font-bold">Users</h1>
+      <Users /> */}
+      <Joke/>
     </div>
   );
 }
