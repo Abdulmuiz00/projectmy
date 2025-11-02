@@ -18,6 +18,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Users from "./API";
 import Joke from "./RandomApi";
 import Weather from "./WeatherApp";
+import MovieSearch from "./MovieSearch";
 
 function App() {
   const details = {
@@ -50,7 +51,8 @@ function App() {
       {/* <h1 className="font-bold">Users</h1>
       <Users /> */}
       {/* <Joke/> */}
-      <Weather />
+      {/* <Weather /> */}
+      |<MovieSearch />
     </div>
   );
 }
