@@ -1,60 +1,43 @@
-import React from "react";
-import Dashboard from "./StatusCards";
-import Greeting from "./Greeting";
-import Counter from "./Counter";
-import ProfileCard from "./ProfileCard";
-import ThemeToggle from "./ThemeToggle";
-import MirrorLocal from "./TypeMirror";
-import ToDoLite from "./Todo";
-import RandomQuote from "./Quote";
-import PasswordToggle from "./PasswordToggler";
-import PasswordToggler from "./PasswordToggler";
-import TipCalculator from "./TipCalculator";
-import TemperatureConverter from "./TempConverter";
-import DigitalClock from "./DigitalClock";
-import CountdownTimer from "./TimeCountdown";
-import About from "./About";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Users from "./API";
-import Joke from "./RandomApi";
-import Weather from "./WeatherApp";
-import MovieSearch from "./MovieSearch";
+import React, { useState } from "react";
+import Pagination from "./Pagination";
 
 function App() {
-  const details = {
-    name: "Abdulmuiz",
-    age: 20,
-    school: "LAUTECH",
-    department: "Computer Science",
-  };
-  return (
-    <div>
-      {/* <Dashboard /> */}
-      {/* <Greeting details={details}/> */}
-      {/* <Counter/> */}
-      {/* <ProfileCard/> */}
-      {/* <ThemeToggle/> */}
-      {/* <MirrorLocal/> */}
-      {/* <ToDoLite/> */}
-      {/* <RandomQuote /> */}
-      {/* <PasswordToggler /> */}
-      {/* <TipCalculator /> */}
-      {/* <TemperatureConverter/> */}
-      {/* <DigitalClock /> */}
-      {/* <CountdownTimer /> */}
-      {/* <BrowserRouter>
-        <Routes>
+  const sampleData = Array.from({ length: 50 }, (_, i) => ({
+    id: i + 1,
+    title: `Item ${i + 1}`,
+    description: `This is the description for item ${i + 1}`,
+  }));
 
-          <Route path="/" element={<About />} />
-        </Routes>
-      </BrowserRouter> */}
-      {/* <h1 className="font-bold">Users</h1>
-      <Users /> */}
-      {/* <Joke/> */}
-      {/* <Weather /> */}
-      |<MovieSearch />
+  const [perPage, setPerPage] = useState(8);
+
+  return (
+    <div style={{ padding: 24, fontFamily: "Inter, Roboto, system-ui" }}>
+      <h2 style={{ textAlign: "center" }}>React Pagination using Array.slice</h2>
+
+      <div
+        style={{
+          maxWidth: 800,
+          margin: "12px auto",
+          display: "flex",
+          gap: 8,
+          alignItems: "center",
+          justifyContent: "flex-end",
+        }}
+      >
+        <label style={{ fontSize: 14 }}>Items per page:</label>
+        <select
+          value={perPage}
+          onChange={(e) => setPerPage(Number(e.target.value))}
+        >
+          <option value={4}>4</option>
+          <option value={6}>6</option>
+          <option value={8}>8</option>
+          <option value={10}>10</option>
+        </select>
+      </div>
+
+      <Pagination data={sampleData} itemsPerPage={perPage} />
     </div>
   );
-}
-
+};
 export default App;
