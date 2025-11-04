@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import TemperatureConverter from "./TemperatureConverter";
+import News from "./News";
 
 function App() {
   return (
     <div>
-      <TemperatureConverter />
+      <News />
     </div>
   );
 }
