@@ -27,7 +27,7 @@ function News() {
 
   return (
     <div className="p-4">
-      <h1 className="text-3xl font-bold text-center mb-6">📰 Latest News Headlines</h1>
+      <h1 className="text-3xl font-bold text-center mb-6"> Latest News Headlines</h1>
       <div className="grid md:grid-cols-3 gap-6">
         {articles.map((article, index) => (
           <div key={index} className="border rounded-xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
