@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import News from "./News";
+import GithubUserFinder from "./GithubFinder";
+
 
 function App() {
   return (
     <div>
-      <News />
+      <GithubUserFinder />
     </div>
   );
 }
