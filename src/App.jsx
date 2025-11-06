@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import GithubUserFinder from "./GithubFinder";
+import ContactForm from "./ContactValidation";
 
 
 function App() {
   return (
     <div>
-      <GithubUserFinder />
+      <ContactForm />
     </div>
   );
 }
