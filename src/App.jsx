@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import ContactForm from "./ContactValidation";
+import FAQAccordion from "./Acordion";
 
 
 function App() {
   return (
-    <div>
-      <ContactForm />
+    <div><FAQAccordion />
     </div>
   );
 }
