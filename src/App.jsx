@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import FAQAccordion from "./Acordion";
+import NewsletterForm from "./NewsLetter";
 
 
 function App() {
   return (
-    <div><FAQAccordion />
+    <div><NewsletterForm />
     </div>
   );
 }

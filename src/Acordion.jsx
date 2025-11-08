@@ -1,9 +1,4 @@
 import React, { useState } from 'react';
-
-// ---------------------------
-// FAQ Accordion component (controlled open state)
-// ---------------------------
-
 function AccordionItem({ id, title, content, isOpen, onToggle }) {
   return (
     <div
