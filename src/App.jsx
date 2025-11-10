@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import NewsletterForm from "./NewsLetter";
+import ModalExample from "./Modal";
 
 
 function App() {
   return (
-    <div><NewsletterForm />
+    <div><ModalExample />
     </div>
   );
 }
