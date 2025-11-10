@@ -6,16 +6,13 @@ import LoginForm from "./Components/Login";
 function ModalExample() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // ✅ Modal structure using React Portal
   const modalContent = (
     <div className="fixed inset-0 flex items-center justify-center z-50">
-      {/* Overlay */}
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={() => setIsOpen(false)}
       ></div>
 
-      {/* Modal box */}
       <div className="relative bg-white rounded-2xl shadow-xl p-6 w-11/12 max-w-md z-10">
         <h2 className="text-2xl font-semibold mb-3 text-center text-blue-700">
           Welcome 👋
@@ -34,7 +31,6 @@ function ModalExample() {
 
   return (
     <div className="flex h-screen flex-col items-center justify-center ">
-      {/* Trigger Button */}
       <LoginForm />
       <button
         onClick={() => setIsOpen(true)}
@@ -43,7 +39,6 @@ function ModalExample() {
         Open Modal
       </button>
 
-      {/* Conditional Portal Rendering */}
       {isOpen &&
         ReactDOM.createPortal(modalContent, document.getElementById("portal-root"))}
     </div>
