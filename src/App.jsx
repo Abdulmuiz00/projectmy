@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import ModalExample from "./Modal";
+import Tabs from "./Tabs";
+
+
 
 
 function App() {
   return (
-    <div><ModalExample />
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <Tabs />
     </div>
   );
 }
