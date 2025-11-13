@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Tabs from "./Tabs";
+import StarRating from "./StarRating";
 
 
 
@@ -7,7 +7,7 @@ import Tabs from "./Tabs";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <Tabs />
+      <StarRating />
     </div>
   );
 }
