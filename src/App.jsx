@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Stopwatch from "./StopWatch";
+import QRCodeGenerator from "./QrGenerator";
 
 
 
@@ -7,7 +7,7 @@ import Stopwatch from "./StopWatch";
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <Stopwatch />
+      <QRCodeGenerator />
     </div>
   );
 }
