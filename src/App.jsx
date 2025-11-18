@@ -1,14 +1,11 @@
-import React, { useState } from "react";
-import QRCodeGenerator from "./QrGenerator";
-
-
-
+import ExpenseTracker from "./ExpenseTracker";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <QRCodeGenerator />
+    <div>
+      <ExpenseTracker />
     </div>
   );
 }
+
 export default App;
