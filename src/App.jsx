@@ -1,9 +1,9 @@
-import ExpenseTracker from "./ExpenseTracker";
+import Notes from "./Notes";
 
 function App() {
   return (
     <div>
-      <ExpenseTracker />
+      <Notes/>
     </div>
   );
 }
