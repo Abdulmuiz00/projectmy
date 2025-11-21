@@ -1,9 +1,12 @@
-import Notes from "./Notes";
+
+
+import Calculator from "./Calculator";
+import NotesApp from "./Notes";
 
 function App() {
   return (
     <div>
-      <Notes/>
+      <Calculator/>
     </div>
   );
 }
