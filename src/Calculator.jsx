@@ -66,7 +66,7 @@ function Calculator() {
           <button onClick={() => handleClick("0")} className="btn col-span-2">0</button>
           <button onClick={() => handleClick(".")} className="btn">.</button>
           <button onClick={handleEqual} className="btn bg-green-500 text-white">=</button>
-        </div>
+        </div> 
       </div>
     </div>
   );

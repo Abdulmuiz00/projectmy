@@ -68,7 +68,7 @@ function NotesApp() {
             key={note.id}
             className="bg-white p-5 shadow-lg rounded-xl relative border"
           >
-            <h2 className="text-xl font-semibold text-gray-800 mb-2">
+            <h2 className="text-xl font-semibold text-gray-800 mb-2">bjh,
               {note.title}
             </h2>
             <p className="text-gray-700">{note.text}</p>
@@ -87,4 +87,3 @@ function NotesApp() {
 }
 
 export default NotesApp;
-
