@@ -1,16 +1,3 @@
-/*
-ProductivitySuite.jsx
-Single-file React component that bundles 4 productivity tools:
- 1) Notes (title + body) - persisted in localStorage
- 2) Weekly Planner (7 days) - add tasks per day, check complete - persisted
- 3) Pomodoro Timer (25/5) - start/pause/reset, cycles count - persisted settings
- 4) Habit Tracker - simple daily toggle for habits, weekly view - persisted
-
-Usage: place this file in your React project (e.g. src/components/ProductivitySuite.jsx)
-Then import and render: import ProductivitySuite from './components/ProductivitySuite';
-
-Styling: Tailwind CSS classes are used. No external APIs.
-*/
 
 import React, { useState, useEffect, useRef } from 'react';
 
